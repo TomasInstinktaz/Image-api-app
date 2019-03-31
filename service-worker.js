@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/tomasinstinktaz.github.io/image-api-app/precache-manifest.3b3f10dc65956958babd023ca38fb607.js"
+  "/tomasinstinktaz.github.io/image-api-app/precache-manifest.2c3463c2d62762e04d09475cc4f69d77.js"
 );
 
 workbox.clientsClaim();
