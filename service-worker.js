@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/TomasInstinktaz.github.io/Image-api-app/precache-manifest.4d998faa4c1a5b73d947aeb1f1999550.js"
+  "/tomasinstinktaz.github.io/image-api-app/precache-manifest.2c3463c2d62762e04d09475cc4f69d77.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/TomasInstinktaz.github.io/Image-api-app/index.html", {
+workbox.routing.registerNavigationRoute("/tomasinstinktaz.github.io/image-api-app/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
