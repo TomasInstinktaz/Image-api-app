@@ -4,7 +4,7 @@ import './index.css';
 // urls is "full, raw, regular, small, thumb"
 const ImagesListItem = ({ image }) => (
     <div className="col-sm-4">
-        <img className="img-responsive" src={image.urls.regular} />
+        <img className="img-responsive" alt={image.alt_description} src={image.urls.regular} />
     </div>
 )
 
