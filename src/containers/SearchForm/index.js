@@ -37,7 +37,7 @@ class SearchForm extends Component {
 
     searchClick(event) {
       event.preventDefault();
-
+      
       this.fetchFunc();
     }
 
@@ -97,7 +97,7 @@ class SearchForm extends Component {
                                     <p className="text-center">Empty Image Grid</p>
                                 }
                                 {
-                                    isFetching && <Loader/>
+                                    isFetching && query.trim() !== '' && <Loader/>
                                 }
                                 {
                                     !isFetching && <ImagesList list={images}/>
@@ -105,7 +105,9 @@ class SearchForm extends Component {
                             </div>
                           </div>
                           <div className="col-sm-4">
-                            <QueryDataList list={query_data} />
+                            <div className="searchForm__savedQueries">
+                                <QueryDataList list={query_data} />
+                            </div>
                           </div>
                       </div>
                     </div>

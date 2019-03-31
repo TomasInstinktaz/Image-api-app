@@ -1,5 +1,11 @@
+@import '../../assets/scss/site-styles.scss';
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  background: $custom-light-grey;
 }
 
 .App-logo {
@@ -11,7 +17,7 @@
   background-color: #222;
   height: 150px;
   padding: 20px;
-  color: white;
+  color: $basic-white;
   text-align: center;
 }
 
@@ -29,56 +35,23 @@
 }
 
 
-/* mixins */
-@mixin placeholder {
-  &::-webkit-input-placeholder {@content}
-  &:-moz-placeholder           {@content}
-  &::-moz-placeholder          {@content}
-  &:-ms-input-placeholder      {@content}
-}
-
-/* extends   */
-%form_field {
-  border-radius: 15px;
-  padding: 8px;
-  border: 1px solid black;
-  background: grey;
-  color: black;
-}
-%form_btn {
-  cursor: pointer;
-}
-%margin_top_bot {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-%absoluteVHCenter {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-%resetLi {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
 /* searchForm  */
 .searchForm {
-  background: grey;   // variable idet
+  background: $custom-light-grey;   // variable idet
   &__searchInput {
     width: 100%;
     outline: none;
+    background: $custom-grey;
     @extend %form_field;
     @extend %margin_top_bot;
     @include placeholder {
-      color: black;
+      color: $basic-black;
       font-weight:400;
     }
   }
   &__searchBtn,
   &__saveBtn {
+    background: $custom-grey;
     width: 48%;
     @extend %form_field;
     @extend %form_btn;
@@ -91,31 +64,16 @@
     float: right;
   }
   &__imageGrid {
-    @extend %form_field;
+    background: $custom-darkner-grey;
     min-height: 300px;
+    @extend %form_field;
     p {
       @extend %absoluteVHCenter;
     }
   }
   &__savedQueries {
-    @extend %form_field;
+    background: $custom-darkner-grey;
     min-height: 300px;
-  }
-}
-
-/*common */
-
-.img-responsive {
-  max-width: 100%;
-  height: auto;
-}
-
-.text-center {
-  text-align: center;
-}
-
-ul {
-  li {
-    @extend %resetLi;
+    @extend %form_field;
   }
 }
