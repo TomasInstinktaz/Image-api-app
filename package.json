@@ -2,7 +2,7 @@
   "name": "image-api-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/TomasInstinktaz/Image-api-app/",
+  "homepage": "https:///tomasinstinktaz.github.io/image-api-app/",
   "dependencies": {
     "@babel/core": "7.2.2",
     "@svgr/webpack": "4.1.0",
@@ -59,7 +59,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
